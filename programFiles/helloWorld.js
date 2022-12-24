@@ -1,5 +1,5 @@
 /*  
-    firstProgram.js
+    helloWorld.js
     AUTORA  : Maria Tchijov Cruz
     FECHA   : 23 de diciembre de 2022.
     Mi primer Hello World en Javascript usando console.log
