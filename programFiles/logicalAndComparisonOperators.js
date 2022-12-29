@@ -1,7 +1,7 @@
 /*  
     logicalAndComparisonOperators.js
     AUTORA  : Maria Tchijov Cruz.
-    FECHA   : 27 de diciembre de 2022.
+    FECHA   : 28 de diciembre de 2022.
     File donde estoy practicando los operadores lógicos y de comparación en JavaScript.
 */
 
