@@ -5,7 +5,7 @@
     File donde estoy practicando las operaciones con string en JavaScript.
 */
 
-//Se declaran e inicializan dos variables para realizar las operaciones de comparación
+//Se declaran e inicializan dos variables para realizar las operaciones de comparación y substring
 let str1 = "Me encanta aprender JavaScript";
 let str2 = "me encanta aprender javascript";
 
@@ -16,9 +16,13 @@ console.log("¿Los strings son exactamente iguales? ", str1 === str2);
 console.log("¿Los strings son iguales si están en mayúsculas? ", str1.toUpperCase() === str2.toUpperCase());
 
 //Se muestra en consola cuántos caracteres tiene str1
-console.log("El número de caracteres de str1 es: ", str1.length());
+console.log("El número de caracteres de str1 es: ", str1.length);
 
+//Se muestra en consola en qué índice se encuentra la letra J dentro de str1
+console.log("La letra 'J' se encuentra en el índice ", str1.indexOf('J'), " de str1");
 
+//Se muestra en consola el último índice en el cual se encuentra la letra 'a' dentro de str1
+console.log("La última vez que se repite la letra 'a' en str1 es en el índice ", str1.lastIndexOf('a'));
 
 //Se declara e inicializa una variable para realizar la operación trim
 let str3 = "    Este el string para realizar el trim    ";
