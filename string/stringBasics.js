@@ -15,6 +15,11 @@ console.log("¿Los strings son exactamente iguales? ", str1 === str2);
 //Se convierten ambos strings a upper case y después se usa el strict equality operator
 console.log("¿Los strings son iguales si están en mayúsculas? ", str1.toUpperCase() === str2.toUpperCase());
 
+//Se muestra en consola cuántos caracteres tiene str1
+console.log("El número de caracteres de str1 es: ", str1.length());
+
+
+
 //Se declara e inicializa una variable para realizar la operación trim
 let str3 = "    Este el string para realizar el trim    ";
 
