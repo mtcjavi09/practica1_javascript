@@ -46,3 +46,21 @@ console.log(str1.substring(str1.indexOf(search1))); //En este ejemplo no se agre
 //  La única diferencia es que slice acepta índices negativos
 //  Los índices negativos empiezan en -1
 console.log(str1.slice(-search1.length));
+
+//Para extraer sólo un caracter de un string puedes utilizar charAt o tratar al string como un array
+console.log("Extracción de '?' con charAt:",str1.charAt(str1.indexOf('?')));
+console.log("Extracción de '?' tratando a str1 como array:", str1[str1.indexOf('?')]);
+
+//Se crea e inicializa una nueva variable para guardar el resultado de str1 al revés
+let reverse = "";
+
+//Se usa el ciclo for para mostrar caracter por caracter en pantalla y hacer reversible el string
+for (let i = 0; i <= (str1.length)-1 ; i++) {
+    //Se muestra caracter por caracter en pantalla
+    console.log(str1[i]);
+    //Se usa la variable reverse para hacer reversible el string guardado
+    reverse = str1[i].concat(reverse);
+}
+
+//Se muestra el resultado de str1 al revés
+console.log("Frase al revés:",reverse);
