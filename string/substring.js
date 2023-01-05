@@ -41,3 +41,8 @@ console.log(str1.substr(0,search2.length));
 //SUBSTRING ayuda a cortar un string indicando el índice inicial y el índice final del recorte
 //  El segundo argumento también es opcional, por lo que si no se agrega pasará lo mismo que con substr
 console.log(str1.substring(str1.indexOf(search1))); //En este ejemplo no se agregó el segundo argumento
+
+//SLICE funciona exactamente igual que substring
+//  La única diferencia es que slice acepta índices negativos
+//  Los índices negativos empiezan en -1
+console.log(str1.slice(-search1.length));
