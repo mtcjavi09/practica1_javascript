@@ -2,7 +2,7 @@
     substring.js
     AUTORA  : Maria Tchijov Cruz.
     FECHA   : 04 de enero de 2023.
-    File donde estoy practicando la búsqueda dentro de un string en JavaScript.
+    File donde estoy practicando los métodos de substring en JavaScript.
 */
 
 //Se declara e inicializa la variable en la cual se realizará la búsqueda de substrings
@@ -16,7 +16,7 @@ console.log("El número de caracteres de str1 es", str1.length);
 
 //INDEXOF busca en qué índice de un string se encuentra el caracter o palabra buscada
 //  Puedes definir el índice desde el cual deseas iniciar tu búsqueda usando su segundo argumento
-//  De igual forma puedes conocer qué letra se encuentra en un índice en específico
+//  De igual forma puedes conocer qué caracter se encuentra en un índice en específico
 console.log("La letra 'j' se encuentra en el índice", str1.indexOf('j'), "de str1");
 
 //LASTINDEXOF busca en qué índice se encuentra la última letra o palabra que está repetida
@@ -66,8 +66,11 @@ for (let i = 0; i <= (str1.length)-1 ; i++) {
 console.log("Frase al revés:",reverse);
 
 //Se usa REGEX para reemplazar algunos caracteres de la frase original y se muestra el resultado
-let replaced = str1.replace(/a/gi, 4);
+let replaced = str1.replace(/a/gi, '4');
 console.log("Frase cambiada:", replaced);
 
 //SEARCH tiene el mismo propósito que INDEXOF, pero acepta REGEX y no permite agregar un punto de partida
 console.log("El caracter especial se encuentra en el índice", str1.search(/[^A-Za-z0-9 ]/));
+
+//MATCH permite mostrar todos los resultados que cumplan con la condición mostrada en la REGEX
+console.log("Los dígitos que hay en la frase cambiada son:", replaced.match(/\d/g));
