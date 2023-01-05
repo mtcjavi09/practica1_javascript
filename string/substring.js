@@ -69,3 +69,5 @@ console.log("Frase al revés:",reverse);
 let replaced = str1.replace(/a/gi, 4);
 console.log("Frase cambiada:", replaced);
 
+//SEARCH tiene el mismo propósito que INDEXOF, pero acepta REGEX y no permite agregar un punto de partida
+console.log("El caracter especial se encuentra en el índice", str1.search(/[^A-Za-z0-9 ]/));
