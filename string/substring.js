@@ -74,3 +74,7 @@ console.log("El caracter especial se encuentra en el índice", str1.search(/[^A-
 
 //MATCH permite mostrar todos los resultados que cumplan con la condición mostrada en la REGEX
 console.log("Los dígitos que hay en la frase cambiada son:", replaced.match(/\d/g));
+
+//SPLIT permite convertir un string en un array utilizando un delimitador para dividirlo
+//  El delimitador puede ser un caracter, dígito, palabra o frase; también puede ser una REGEX
+console.log("Frase convertida en array:", str1.split(' '));
