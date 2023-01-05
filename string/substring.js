@@ -64,3 +64,8 @@ for (let i = 0; i <= (str1.length)-1 ; i++) {
 
 //Se muestra el resultado de str1 al revés
 console.log("Frase al revés:",reverse);
+
+//Se usa REGEX para reemplazar algunos caracteres de la frase original y se muestra el resultado
+let replaced = str1.replace(/a/gi, 4);
+console.log("Frase cambiada:", replaced);
+
