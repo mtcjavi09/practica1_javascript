@@ -22,6 +22,9 @@ let object2 = {
     edad : 20,
     semestre: 8
 };
+//  Se agrega una nueva propiedad al objeto 2
+object2.grupo = 402;
 //  Se muestra el objeto completo en consola
 console.log("Objeto 2:", object2);
-console.log("Nombre completo:", object2.nombre, object2.apellido);
+//  Se muestran sólo los valores del nombre y apellido del objeto 2
+console.log("Nombre completo:", object2.nombre, object2["apellido"]);
