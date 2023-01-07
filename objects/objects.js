@@ -19,19 +19,29 @@ let object2 = {
     apellido : "TCHIJOV CRUZ",
     carrera : "ICA",
     edad : 20,
-    semestre: 8
+    semestre: 8,
+    displayName(){
+        //Se utilizará una mejor práctica de concatenación en un string
+        console.log(`El nombre completo del (la) estudiante es ${this["nombre"]} ${this["apellido"]}`);
+    },
+    displayProperty(property){
+        //A partir del string que indique el usuario es la propiedad que se mostrará en consola
+        console.log(`La propiedad a mostrar es ${property} y su valor es ${this[property]}`);
+    }
 };
 //  Se agrega una nueva propiedad al objeto 2
 object2.grupo = 402;
+
 //  La BRACKET NOTATION es la única que puede llamar y modificar a:
 //      1. Las propiedades que tienen un número como nombre
 //      2. Las propiedades que son llamadas de forma dinámica a través de una variable
 //  NOTA: cuando deseas llamar a una propiedad SIN USAR UNA VARIABLE, tienes que agregar comillas
 object2["7"] = "BANGTAN SONYEONDAN";
+
 //  Se muestra el objeto completo en consola
 console.log("Objeto 2:", object2);
-//  Se muestran sólo los valores del nombre y apellido del objeto 2
-console.log("Nombre completo:", object2.nombre, object2["apellido"]);
-//  Se guarda la propiedad que desea ser recuperada en una variable y se muestra su valor en consola
+//  Se llama a la función del objeto 2 que muestra el nombre
+object2.displayName();
+//  Se llama a la función del objeto 2 que muestra la propiedad deseada por el usuario
 let propiedadDeseada = "7";
-console.log("Propiedad dinámica del objeto:", object2[propiedadDeseada])
+object2.displayProperty(propiedadDeseada);
