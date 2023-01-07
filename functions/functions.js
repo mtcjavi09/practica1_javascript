@@ -11,8 +11,8 @@ function suma (num1=0, num2=0){
     return suma;
 }
 
-//Función que muestra el abecedario con un ciclo for
-function abecedario(){
+//Función que muestra el abecedario con un ciclo for, la cual fue asignada a una variable
+let abecedario = function (){
     let abc = "ABCDEFJHIJKLMNÑOPQRSTUVWXYZ";
     for (let i = 0; i < abc.length; i++) {
         console.log(abc[i]);        
