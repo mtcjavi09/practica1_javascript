@@ -6,7 +6,7 @@
 */
 
 //Función que suma dos números
-function suma (num1, num2){
+function suma (num1=0, num2=0){
     let suma = num1 + num2;
     return suma;
 }
@@ -22,4 +22,4 @@ function abecedario(){
 //Se llaman a las funciones que han sido creadas y se muestran los resultados en consola
 let result = suma(23,32);
 console.log("La suma es:",result);
-console.log(abecedario());
+abecedario();
