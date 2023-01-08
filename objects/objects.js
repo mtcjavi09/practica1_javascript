@@ -58,11 +58,11 @@ object2["semestre"] = "8VO SEMESTRE";
 //  Se muestra el objeto completo en consola
 console.log("\n*    *   *   objeto 2    *   *   *\n", object2);
 //  Se llama a la función del objeto 2 que muestra el nombre
-console.log("*  *   *   nombre del estudiante   *   *   *\n");
+console.log("\n*  *   *   nombre del estudiante   *   *   *");
 object2.displayName();
 //  Se llama a la función del objeto 2 que muestra la propiedad deseada por el usuario
 let propiedadDeseada = "7";
-console.log("*  *   *   selección de la propiedad dentro del objeto 2   *   *   *\n");
+console.log("\n*  *   *   selección de la propiedad dentro del objeto 2   *   *   *");
 object2.displayProperty(propiedadDeseada);
 
 //  Se agrega la propiedad 'grupo' y se elimina la propiedad '7' en el objeto 2
@@ -73,7 +73,7 @@ delete object2["7"];
 object2["direccion"]["numInterior"] = "N/A";
 
 // Se llama a la función del objeto 2 que muestra la dirección
-console.log("*  *   *   dirección del estudiante    *   *   *\n");
+console.log("\n*  *   *   dirección del estudiante    *   *   *");
 object2.displayAdress();
 
 //  Se muestra el objeto modificado en consola
@@ -92,7 +92,7 @@ let tablaPeriodica = {
 }
 
 //  Se utiliza el for...in loop para iterar en las propiedades del objeto de la tabla periódica
-console.log("\n*    *   *   elementos de la tabla periódica");
+console.log("\n*    *   *   elementos de la tabla periódica *   *   *");
 for (const key in tablaPeriodica) {
     console.log(`${key}: ${tablaPeriodica[key]}`);
 }
