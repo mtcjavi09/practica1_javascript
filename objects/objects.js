@@ -20,7 +20,7 @@ let object2 = {
     carrera: "ICA",
     edad: 21,
     semestre: 8,
-    //Se agrega un nested object dentro de las propiedades de object 2
+    //Se agrega un nested object dentro de las propiedades del objeto 2
     direccion: {
         calle: "ENCINOS PONIENTE",
         numExterior: 32,
@@ -57,9 +57,11 @@ object2["semestre"] = "8VO SEMESTRE";
 
 //  Se muestra el objeto completo en consola
 console.log("\n*    *   *   objeto 2    *   *   *\n", object2);
+
 //  Se llama a la función del objeto 2 que muestra el nombre
 console.log("\n*  *   *   nombre del estudiante   *   *   *");
 object2.displayName();
+
 //  Se llama a la función del objeto 2 que muestra la propiedad deseada por el usuario
 let propiedadDeseada = "7";
 console.log("\n*  *   *   selección de la propiedad dentro del objeto 2   *   *   *");
@@ -91,7 +93,7 @@ let tablaPeriodica = {
     O : "OXÍGENO"
 }
 
-//  Se utiliza el for...in loop para iterar en las propiedades del objeto de la tabla periódica
+//  Se utiliza el for...in loop para iterar las propiedades del objeto de la tabla periódica
 console.log("\n*    *   *   elementos de la tabla periódica *   *   *");
 for (const key in tablaPeriodica) {
     console.log(`${key}: ${tablaPeriodica[key]}`);
