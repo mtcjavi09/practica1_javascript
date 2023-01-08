@@ -11,7 +11,7 @@ let object1 = {}; //El objeto está vacío
 object1.property1 = "MASHA";
 object1.property2 = "TCHIJOV";
 //  Se muestra en consola el objeto creado
-console.log("Mi primer objeto:", object1);
+console.log("\n*    *   *   mi primer objeto    *   *   *\n", object1);
 
 //Se crea un nuevo objeto con sus propiedades y valores definidos desde el inicio
 let object2 = {
@@ -56,11 +56,13 @@ object2["7"] = "BANGTAN SONYEONDAN";
 object2["semestre"] = "8VO SEMESTRE";
 
 //  Se muestra el objeto completo en consola
-console.log("Objeto 2:", object2);
+console.log("\n*    *   *   objeto 2    *   *   *\n", object2);
 //  Se llama a la función del objeto 2 que muestra el nombre
+console.log("*  *   *   nombre del estudiante   *   *   *\n");
 object2.displayName();
 //  Se llama a la función del objeto 2 que muestra la propiedad deseada por el usuario
 let propiedadDeseada = "7";
+console.log("*  *   *   selección de la propiedad dentro del objeto 2   *   *   *\n");
 object2.displayProperty(propiedadDeseada);
 
 //  Se agrega la propiedad 'grupo' y se elimina la propiedad '7' en el objeto 2
@@ -71,7 +73,26 @@ delete object2["7"];
 object2["direccion"]["numInterior"] = "N/A";
 
 // Se llama a la función del objeto 2 que muestra la dirección
+console.log("*  *   *   dirección del estudiante    *   *   *\n");
 object2.displayAdress();
 
 //  Se muestra el objeto modificado en consola
-console.log("Objeto 2 modificado:", object2);
+console.log("\n*    *   *   objeto 2 modificado *   *   *\n", object2);
+
+//Se crea un nuevo objeto que contiene elementos de la tabla periódica
+let tablaPeriodica = {
+    H : "HIDRÓGENO",
+    He : "HELIO",
+    Li : "LITIO",
+    Be : "BERILIO",
+    B : "BORO",
+    C : "CARBÓN",
+    N : "NITRÓGENO",
+    O : "OXÍGENO"
+}
+
+//  Se utiliza el for...in loop para iterar en las propiedades del objeto de la tabla periódica
+console.log("\n*    *   *   elementos de la tabla periódica");
+for (const key in tablaPeriodica) {
+    console.log(`${key}: ${tablaPeriodica[key]}`);
+}
