@@ -37,3 +37,6 @@ integers.shift(); //Se elimina el primer elemento, en este caso el número -1
 //Se muestran los cambios
 console.log("Array 'integers' final:", integers, "\n");
 console.log("Al finalizar la ejecución, hay", integers.length, "elementos en el array 'integers'\n");
+
+//Se crea un nuevo array constante para realizar las operaciones de búsqueda
+const planetas = ["MERCURIO", "VENUS", "TIERRA", "MARTE", "JÚPITER", "SATURNO", "URANO", "NEPTUNO"];
