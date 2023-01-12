@@ -25,7 +25,7 @@ console.log("Hay", WEEK.length, "elementos en el array 'WEEK'\n");
 
 //Se agregan y eliminan elementos al inicio y al final del array integers, mostrando los cambios en consola
 integers.push(7,8,9,10,11); //Se agregan los elementos al final
-integers.unshift(-1,0); //Se agregan los elementos al final
+integers.unshift(-1,0); //Se agregan los elementos al inicio
 
 //Se muestran los cambios
 console.log("Array 'integers' actualizado:", integers, "\n");
