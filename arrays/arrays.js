@@ -40,3 +40,8 @@ console.log("Al finalizar la ejecución, hay", integers.length, "elementos en el
 
 //Se crea un nuevo array constante para realizar las operaciones de búsqueda
 const planetas = ["MERCURIO", "VENUS", "TIERRA", "MARTE", "JÚPITER", "SATURNO", "URANO", "NEPTUNO"];
+
+//Se realizan las operaciones de búsqueda en el array planetas y se muestran los resultados en consola
+console.log("¿TIERRA está presente en el array de planetas?", planetas.includes("TIERRA"));
+console.log("El primer índice donde se encuentra VENUS en el array planetas es", planetas.indexOf("VENUS"));
+console.log("El índice al buscar MARTE desde el final del array planetas es", planetas.lastIndexOf("MARTE"));
