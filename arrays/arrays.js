@@ -25,7 +25,7 @@ console.log("Hay", WEEK.length, "elementos en el array 'WEEK'\n");
 
 //Se agregan y eliminan elementos al inicio y al final del array integers, mostrando los cambios en consola
 integers.push(7,8,9,10,11); //Se agregan los elementos al final
-integers.unshift(-1,0); //Se agregan los elementos al inicio
+integers.unshift(-1); //Se agregan un elemento al inicio
 
 //Se muestran los cambios
 console.log("Array 'integers' actualizado:", integers, "\n");
@@ -39,9 +39,41 @@ console.log("Array 'integers' final:", integers, "\n");
 console.log("Al finalizar la ejecución, hay", integers.length, "elementos en el array 'integers'\n");
 
 //Se crea un nuevo array constante para realizar las operaciones de búsqueda
-const planetas = ["MERCURIO", "VENUS", "TIERRA", "MARTE", "JÚPITER", "SATURNO", "URANO", "NEPTUNO"];
+let planetas = ["MERCURIO", "VENUS", "TIERRA", "MARTE", "JÚPITER", "SATURNO", "URANO", "NEPTUNO"];
 
 //Se realizan las operaciones de búsqueda en el array planetas y se muestran los resultados en consola
-console.log("¿TIERRA está presente en el array de planetas?", planetas.includes("TIERRA"));
-console.log("El primer índice donde se encuentra VENUS en el array planetas es", planetas.indexOf("VENUS"));
-console.log("El índice al buscar MARTE desde el final del array planetas es", planetas.lastIndexOf("MARTE"));
+console.log("¿TIERRA está presente en el array 'planetas'?", planetas.includes("TIERRA"));
+console.log("El primer índice donde se encuentra VENUS en el array 'planetas' es", planetas.indexOf("VENUS"));
+console.log("El índice al buscar MARTE desde el final del array 'planetas' es", planetas.lastIndexOf("MARTE"), "\n");
+
+//Se utilizan más operaciones útiles para trabajar con el array planetas
+//  Se juntan todos los elementos del array utilizando un espacio como delimitador
+console.log("Array 'planetas' convertido a string con JOIN: \n", planetas.join(" "), "\n");
+
+//  Se convierte a string el array planetas sin utilizar delimitador
+const stringPlanetas = planetas.toString();
+console.log("Array 'planetas' convertido a string con TOSTRING: \n", stringPlanetas, "\n");
+
+//  Se vuelve a convertir el string a un array y se muestra el resultado en consola
+planetas = stringPlanetas.split(",");
+console.log("Array 'planetas:", planetas, "\n");
+
+//  Se muestran sólo los primeros 4 planetas del sistema solar
+console.log("Los primeros 4 planetas del sistema solar son:", planetas.slice(0,4), "\n");
+
+//  Se invierte el orden del array y se muestra en consola el resultado
+console.log("El orden invertido de los 8  planetas del sistema solar es:", planetas.reverse(), "\n");
+//  Posteriormente, se vuelve al orden original
+console.log("El orden original de los 8 planetas del sistema solar es:", planetas.reverse(), "\n");
+
+//Se usa el for...of loop para iterar el array 'WEEK'
+for (const iterator of WEEK) {
+    console.log("DÍA",(WEEK.indexOf(iterator) + 1), ":", iterator);   
+}
+
+console.log("\n");
+
+//Se usa el for...each loop para iterar el array 'integers'
+integers.forEach(element => {
+    console.log("Multiplicación", integers.indexOf(element) + 1, ":", element, "* 2 =", element * 2);
+});
