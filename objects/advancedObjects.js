@@ -51,10 +51,9 @@ function Address(calle, numExt, numInt, ciudad, estado, pais, codigoPostal){
     this["postCode"] = codigoPostal
 }
 
-//  Se hacen dos ejecuciones de la función address para probar ambos casos y se muestra el resultado
+//  Se hacen dos ejecuciones de la función Address para probar ambos casos y se muestra el resultado
 let address1 = Address("Perales", "21","","Cuautitlán Izcalli","México","México","54740");
 let address2 = new Address("Nogales", "32", "23B", "Toluca", "México", "México", "57523");
-
 console.log(address1, "\n");
 console.log(address2, "\n");
 
