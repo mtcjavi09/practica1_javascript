@@ -57,3 +57,29 @@ let address2 = new Address("Nogales", "32", "23B", "Toluca", "México", "México
 
 console.log(address1, "\n");
 console.log(address2, "\n");
+
+//Se realiza la prueba del método CALL para llamar una función perteneciente a un objeto
+//  CALL permite referenciar el objeto desde el cual se quiere ejecutar la función
+
+//  Se crea un objeto de una cuenta bancaria con una función para aumentar la cantidad disponible
+let account = {
+    name: "Maria",
+    number: 643,
+    amount: 100,
+    addAmount: function(amount){
+        this["amount"] += amount;
+    }
+}
+
+//  Se crea el objeto para el gerente responsable de la cuenta, haciendo referencias al objeto 'account'
+let manager = {
+    name: "Sara",
+    managedAccount: account["number"],
+    addAmount: account["addAmount"]
+}
+
+//  Se ejecuta la función addAmount del objeto 'account' desde el objeto 'manager'
+manager["addAmount"].call(account, 500);
+
+//  Se muestran en consola el objeto 'manager' y el objeto 'account'
+console.log("Manager:\n", manager, "\n\nAccount:\n", account, "\n")
